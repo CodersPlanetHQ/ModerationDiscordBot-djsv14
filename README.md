@@ -1,4 +1,4 @@
-# discord-simple-mod-bot
+# ModerationDiscordBot-djsv14
 
 A simple moderation bot for Discord using discord.js v14 and slash commands. This bot is designed to be a starting point for learning Discord bot development, with all core logic contained in a single file (`index.js`).
 
