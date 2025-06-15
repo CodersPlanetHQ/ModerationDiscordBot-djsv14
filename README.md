@@ -55,3 +55,46 @@ See the [Roadmap](#roadmap) section for ideas on how to improve this bot.
 ## Contributing
 
 Feel free to fork this repository and make improvements.
+
+# Roadmap
+Roadmap: Enhancing the Mod Bot
+
+-   **Core Functionality Expansion**
+    -   Add more moderation commands
+        -   `warn`: Implement a warning system (requires data storage)
+        -   `unban`: Allow unbanning users by ID
+        -   `mute`/`unmute`: Implement mute functionality (using roles or timeouts)
+        -   `purge`: Delete a number of messages
+        -   `lock`/`unlock`: Lock/unlock channels
+    -   Improve existing commands
+        -   Add confirmation steps for irreversible actions (ban/kick)
+        -   Better error handling and user feedback
+        -   More specific permission checks
+-   **Code Structure & Maintainability**
+    -   Split into multiple files / Use a Command Handler
+        -   Separate command definitions and execution logic
+        -   Separate event listeners
+        -   Centralize bot initialization
+    -   Implement a Configuration System
+        -   Use a dedicated config file (JSON, YAML) or database for settings
+        -   Allow per-guild settings
+-   **Data Storage (Essential for advanced features)**
+    -   Integrate a Database
+        -   Store moderation logs (who, what, when, why)
+        -   Store warnings
+        -   Store timed mutes/bans
+        -   Options: SQLite (simple, file-based), MongoDB, PostgreSQL
+-   **Logging & Auditing**
+    -   Implement server-specific logging channels
+    -   Log all moderation actions performed by the bot
+-   **Advanced Features**
+    -   Automated moderation (spam detection, link filtering, profanity filtering)
+    -   Case management system (view historical moderation actions for a user)
+    -   Appeal system integration
+    -   Web dashboard for managing moderation data
+-   **Deployment & Scaling**
+    -   Learn proper deployment strategies (Heroku, VPS, Docker)
+    -   Consider sharding for larger bots
+-   **Testing**
+    -   Write unit tests for command logic
+    -   Write integration tests for bot interactions
