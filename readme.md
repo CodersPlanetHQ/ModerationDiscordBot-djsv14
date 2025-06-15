@@ -24,7 +24,6 @@ A simple moderation bot for Discord using discord.js v14 and slash commands. Thi
     git clone https://github.com/CodersPlanetHQ/ModerationDiscordBot-djsv14.git
     cd ModerationDiscordBot-djsv14
     ```
-    *(Note: Updated clone URL to match the provided repo)*
 2.  **Install dependencies:**
     ```bash
     npm install discord.js dotenv @discordjs/rest discord-api-types
